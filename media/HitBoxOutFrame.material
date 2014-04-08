@@ -1,0 +1,18 @@
+material HitBoxOutFrame
+ {
+   technique
+   {
+     pass
+     {
+       cull_software none
+       cull_hardware none
+       scene_blend alpha_blend
+       depth_write off
+       texture_unit
+       {
+         colour_op_ex source1 src_manual src_current 0.4 0.4 0.4
+         alpha_op_ex source1 src_manual src_current 0.45
+       }
+     }
+   }
+ }

@@ -1,0 +1,17 @@
+material MagArrow
+ {
+   technique
+   {
+     pass
+     {
+       scene_blend alpha_blend
+       depth_write on
+       depth_func always_pass
+       texture_unit
+       {
+         colour_op_ex source1 src_manual src_current 0 0.4 0.7
+         alpha_op_ex source1 src_manual src_current 0.6
+       }
+     }
+   }
+ }
